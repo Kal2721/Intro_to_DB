@@ -1,12 +1,13 @@
 USE alx_book_store;
 
-COLUMN_NAME as 'Field',
-COLUMN_TYPE as 'Type',
-IS_NULLABLE as 'Null',
-COLUMN_KEY as 'Key',
-COLUMN_DEFAULT as 'Default',
-EXTRA as 'Extra'
-FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_SCHEMA = 'alx_book_store' 
-AND TABLE_NAME = 'Books'
-ORDER BY ORDINAL_POSITION;
+SELECT
+    COLUMN_NAME AS 'Field',
+    COLUMN_TYPE AS 'Type',
+    IS_NULLABLE AS 'Null',
+    COLUMN_KEY AS 'Key',
+    COLUMN_DEFAUL AS 'Default',
+    EXTRA AS 'Extra'
+    FROM INFORMATION_SCHEMA.COLUMNS
+    WHERE TABLE_SCHEMA = 'alx_book_store' 
+    AND TABLE_NAME = 'Books'
+    ORDER BY ORDINAL_POSITION;
